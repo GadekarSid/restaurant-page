@@ -1,0 +1,122 @@
+
+:root {
+    --font-color: #eee;
+    --font-color-dark: #aaa;
+    --border-color: #222;
+    --background-light: rgba(0, 0, 0, 0.6);
+    --background-light-hover: rgba(99, 99, 99, 0.4);
+    --background-dark: rgba(0, 0, 0, 0.9);
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+    line-height: 1.6;
+  }
+  
+  body {
+    font-family: 'Montserrat', cursive;
+    font-size: 1.6rem;
+    color: var(--font-color);
+    background-image: url('images/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+    background-color: rgba(0,0,0,0.9);
+    border-bottom: 1px solid #222;
+}
+
+.main{
+    max-width: 700px;
+    padding: 4rem;
+    margin: 6rem 0;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid #222;
+}
+.home{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home img{
+    width: 50%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    opacity: 90%;
+}
+.nav-button{
+    padding: 2rem;
+    font-size: 2rem;
+    background-color: transparent;
+    border-bottom: 2px solid transparent;
+    transition: transform 0.3s;
+}
+.nav-button-active{
+    border-bottom: 2px solid #eee;
+}
+button{
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+    border-style: none;
+    outline: none;
+}
+.menu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    animation: fadeIn 1.5s;
+}
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding: 4rem;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: background-color 0.3s;
+}
+.menu-item img {
+    width: 60%;
+}
+.menu-item p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.menu-item h2 {
+    padding: 2rem;
+}
+h1, h2, h3 {
+    line-height: 1.2;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
